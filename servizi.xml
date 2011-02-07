@@ -1,0 +1,12 @@
+<serviziweb>
+	<servizio>
+		<nome>Servizio1</nome>
+		<wsdl>miowsdl</wsdl>
+		<applicativo>pass</applicativo>
+	</servizio>
+	<servizio>
+		<nome>Importa Malattie</nome>
+		<wsdl>miowsdl</wsdl>
+		<applicativo>pass</applicativo>
+	</servizio>
+</serviziweb>

@@ -1,0 +1,44 @@
+
+<project name="Swing" default="jar" basedir=".">
+	<description>
+  	Web Services build file
+	</description>
+
+	<!-- set global properties for this build -->
+	<property name="src.home" 			location="src" />
+	<property name="build.home" 		location="build" />
+	<property name="classes.home" 	location="build/classes" />
+	<property name="dist.home" 			location="dist" />
+	<property name="resources.home" location="resources" />
+	<property name="mig.home" 			location="C:/java/libs/mig-layout" />
+	
+	<path id="project.classpath">
+		<fileset dir="${mig.home}" includes="*.jar" />
+		<pathelement location="${classes.home}"/>
+	</path>
+	
+	<target name="init">
+		<mkdir dir="${build.home}" />
+		<mkdir dir="${classes.home}" />
+		<mkdir dir="${resources.home}" />
+		<mkdir dir="${dist.home}" />
+	</target>
+
+	<target name="compile" depends="init">
+		<javac srcdir="${src.home}" destdir="${classes.home}" >
+			<classpath refid="project.classpath" />
+		</javac>
+	</target>
+
+	<target name="jar" depends="compile" description="generate the distribution jar">
+
+		<jar destfile="${dist.home}/Swing.jar" basedir="${classes.home}" >
+      <manifest>
+      	<attribute name="Main-Class" value="sm.ciscoop.Test"/>
+      </manifest>
+			<fileset dir="${resources.home}" includes="**/*" />
+		</jar>
+
+	</target>
+	
+</project>

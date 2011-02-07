@@ -1,0 +1,8 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cis="http://importa.ciscoop.sm/"> 
+   <soapenv:Header/>
+   <soapenv:Body>
+      <cis:importaMalattie>
+      	<arg0>ProvaSOAP</arg0>
+      </cis:importaMalattie>
+   </soapenv:Body>
+</soapenv:Envelope>
