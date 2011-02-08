@@ -23,8 +23,8 @@ public class SOAPDispatcher implements Serializable {
 	
 	private String c_targetNameSpace = "http://importa.ciscoop.sm/";
 	private String c_wsdl = "http://localhost:8080/ImportaMalattie/ImportaMalattie?wsdl"; //detto anche endpoint
-	private QName serviceName = null;
-	private QName portName = null;
+//	private QName serviceName = null;
+//	private QName portName = null;
 	
 	
 	public SOAPDispatcher(String wsdl) {
