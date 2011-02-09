@@ -9,6 +9,7 @@ import sm.ciscoop.gui.SingletonGUI;
 public class Test {
 
 	/**
+	 * Lancio dell'applicativo
 	 * @param args
 	 */
 	public static void main(String[] args) {
